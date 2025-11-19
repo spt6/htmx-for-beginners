@@ -1,5 +1,6 @@
 import express from 'express';
 import createHomepageTemplate from './views/index.js';
+import showBooks from './views/list.js';
 
 // create app
 const app = express();
@@ -14,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/books', (req, res) => {
-  res.send(/* implement */);
+  res.send(showBooks());
 });
 
 // listen to port

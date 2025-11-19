@@ -1,5 +1,9 @@
-const listOfBooks = () => 
-    return;
-  
+import BOOKS_DATA from "../data/data";
 
-export default listOfBooks;
+const showBooks = () => /*html*/`
+    <ul>  +
+        BOOKS_DATA.map(books)
+    + '</ul>
+`;
+
+export default showBooks;
